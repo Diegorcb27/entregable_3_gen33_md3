@@ -62,7 +62,7 @@ test("POST /movies/:id/actors debe insertar los actores de una pelicula", async(
         lastName: "test_lastname",
         nationality:  "test_nationality",
         image: "http:/image.com",
-        birthday: 2000-1-15
+        birthday: "2000-01-15"
     }); //creamos un name para el test
     const res=await request(app)
         .post(`/movies/${id}/actors`)
